@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WC26 Admin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>⚙️ WC26 Admin Dashboard</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Admin Password</h2>
+
+        <input
+            type="password"
+            id="adminPassword"
+            placeholder="Admin Password">
+
+        <button onclick="unlockAdmin()">
+            Login
+        </button>
+
+    </div>
+
+    <div id="adminArea" style="display:none;">
+
+        <!-- ADD PLAYER -->
+
+        <div class="card">
+
+            <h2>Add Player</h2>
+
+            <input
+                id="playerName"
+                placeholder="Player Name">
+
+            <input
+                id="playerPass"
+                placeholder="Player Password">
+
+            <button onclick="addPlayer()">
+                Add Player
+            </button>
+
+        </div>
+
+        <!-- ADD FIXTURE -->
+
+        <div class="card">
+
+            <h2>Add Fixture</h2>
+
+            <input
+                id="homeTeam"
+                placeholder="Home Team">
+
+            <input
+                id="awayTeam"
+                placeholder="Away Team">
+
+            <input
+                id="kickoff"
+                type="datetime-local">
+
+            <button onclick="addFixture()">
+                Add Fixture
+            </button>
+
+        </div>
+
+        <!-- RESULTS -->
+
+        <div class="card">
+
+            <h2>Enter Results</h2>
+
+            <div id="fixturesContainer">
+                Loading fixtures...
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>

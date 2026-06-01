@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>WC26 Prediction League</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>⚽ WC26 Prediction League</h1>
+
+    <p>
+        Maximum Banter.
+        Maximum Heartbreak.
+        Maximum Bragging Rights.
+    </p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Navigation</h2>
+
+        <p>
+            <a href="predict.html">
+                Submit Predictions
+            </a>
+        </p>
+
+        <p>
+            <a href="leaderboard.html">
+                Leaderboard
+            </a>
+        </p>
+
+        <p>
+            <a href="admin.html">
+                Admin
+            </a>
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Scoring Rules</h2>
+
+        <table>
+
+            <tr>
+                <th>Rule</th>
+                <th>Points</th>
+            </tr>
+
+            <tr>
+                <td>Exact Draw Scoreline</td>
+                <td>18</td>
+            </tr>
+
+            <tr>
+                <td>Exact Scoreline</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <td>Correct Draw</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>Correct Winner</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Correct Goal Difference</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>Home Goals Exact</td>
+                <td>+2</td>
+            </tr>
+
+            <tr>
+                <td>Away Goals Exact</td>
+                <td>+2</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Current Standings</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Points</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="leaderboard">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+
+</html>
